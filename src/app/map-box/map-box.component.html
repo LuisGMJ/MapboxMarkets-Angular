@@ -1,0 +1,26 @@
+<h2 class="text-center">
+    Markers</h2>
+
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>Marcador</th>
+            <th>Ir ahí</th>
+            <th>Borrar</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let marker of markers | async">
+            <td>{{ marker.properties.message }}</td>
+            <td class="text-center"><a class="btn btn-info" (click)="flyTo(marker)" href="#map">Ir</a></td>
+            <td class="text-center"><button class="btn btn-danger" (click)="removeMarker(marker)">Delete</button></td>
+        </tr>
+    </tbody>
+</table>
+
+<hr>
+<p>Escriba el mensaje que se mostrara en el marcador, y despues de click en un punto en el mapa donde quiera agregar el marcador</p>
+<input type="text" [(ngModel)]="message" placeholder="Mensaje del marcador...">
+<hr>
+
+<div class="map" id="map"></div>
