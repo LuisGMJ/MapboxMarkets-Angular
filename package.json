@@ -23,7 +23,7 @@
     "@types/mapbox-gl": "^1.8.0",
     "bootstrap": "^4.4.1",
     "firebase": "^7.9.1",
-    "jquery": "^3.4.1",
+    "jquery": "^3.5.0",
     "mapbox-gl": "^1.8.0",
     "popper.js": "^1.16.1",
     "rxjs": "~6.4.0",
